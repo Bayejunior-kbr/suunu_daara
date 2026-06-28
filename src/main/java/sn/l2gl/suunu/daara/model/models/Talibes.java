@@ -19,14 +19,14 @@ import java.time.LocalDate;
 public class Talibes {
     @Id
     @Column(length=200,unique = true)
-    private int matricule;
+    private String matricule;
     private String nom;
     private String prenom;
     private LocalDate dateNaissance;
     private String nomTuteur;
     private String telephoneTuteur;
 
-    @ManyToOne(optional = false)
+   /* @ManyToOne(optional = false)
     @JoinColumn(name="classe_code")
-    private Classe classe;
+    private Classe classe;*/
 }

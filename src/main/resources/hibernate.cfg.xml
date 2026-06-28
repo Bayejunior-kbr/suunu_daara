@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
         "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
 
@@ -13,8 +13,7 @@
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password"></property>
 
-        <!-- Dialecte MySQL -->
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
 
         <!-- Afficher SQL dans console -->
         <property name="show_sql">true</property> <!-- affiche les requêtes SQL dans la console-->
@@ -24,7 +23,7 @@
         <property name="hbm2ddl.auto">update</property> <!--Hibernate crée/modifie les tables automatiquement-->
 
         <!-- Entity -->
-        <mapping class="com.baye.Produit"/> <!--"Hibernate utilise cette classe"-->
+        <mapping class="sn.l2gl.suunu.daara.model.models.Talibes"/> <!--"Hibernate utilise cette classe"-->
 
     </session-factory>
 
